@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>studentPartner</display-name>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- 
+      Note: Servlets are mapped via @WebServlet annotations in Java classes:
+        - AddStudentServlet    -> /AddStudentServlet, /add
+        - ListStudentServlet   -> /ListStudentServlet, /list
+        - UpdateStudentServlet -> /UpdateStudentServlet, /update
+        - DeleteStudentServlet -> /DeleteStudentServlet, /delete
+      
+      This avoids duplicate URL-pattern mapping collisions in Tomcat 10/11.
+    -->
+
+</web-app>
